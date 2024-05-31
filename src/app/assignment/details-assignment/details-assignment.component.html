@@ -1,0 +1,66 @@
+<div class="main-content">
+  <div class="container-fluid">
+    <div class="alert alert-success" *ngIf="renduNotif">
+      <button mat-button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <i class="material-icons">close</i>
+      </button>
+      <span>
+        <b>Success - </b> Devoir rendu !
+      </span>
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <div class="card card-stats">
+          <div class="card-header card-header-danger card-header-icon text-center">
+            <div class="card-icon">
+              <img class="img-fluid" [src]="assignmentTransmis?.matiereImage" alt="Image illustrant la matière">
+            </div>
+            <h4 class="card-title">Assignment - {{assignmentTransmis?.nom.replace('MODIFIE PAR LE PIPE', '').trim()}}</h4>
+            <p class="card-category">{{assignmentTransmis?.dateDeRendu | date}}</p>
+          </div>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label><strong>Élève :</strong> {{assignmentTransmis?.auteur}}</label>
+                </div>
+                <div class="form-group">
+                  <label><strong>Professeur :</strong> {{assignmentTransmis?.prof}}</label>
+                </div>
+                <div class="form-group">
+                  <label><strong>Matière :</strong> {{assignmentTransmis?.matiere}}</label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label><strong>Note :</strong> {{assignmentTransmis?.note}}</label>
+                </div>
+                <div class="form-group">
+                  <label><strong>Remarques :</strong> {{assignmentTransmis?.remarques}}</label>
+                </div>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <div class="col-md-4">
+                <mat-checkbox *ngIf="!assignmentTransmis.rendu" (click)="onAssignmentRendu()">
+                  Rendu
+                </mat-checkbox>
+              </div>
+              <div class="col-md-4">
+                <button *ngIf="authService.currentUser[0].isAdmin" mat-raised-button color="primary" (click)="onClickEdit()">EDIT</button>
+              </div>
+              <div class="col-md-4">
+                <button *ngIf="authService.currentUser[0].isAdmin" mat-flat-button color="warn" (click)="onDeleteAssignment()">DELETE</button>
+              </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+              <div class="col-md-12">
+                <img class="img-fluid" [src]="assignmentTransmis?.profPhoto" alt="Image du professeur">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+.main-content {
+    .container-fluid {
+      .card {
+        .card-header {
+          background-color: #e53935; // Rouge pour danger
+        }
+        .mat-paginator-container {
+          display: flex;
+          justify-content: center;
+        }
+        .table-responsive {
+          overflow-x: auto;
+        }
+      }
+    }
+  }
+  
