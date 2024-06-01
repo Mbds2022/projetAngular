@@ -19,7 +19,7 @@ export class AssignmentService {
   }
 
   // url = 'http://localhost:8010/api/assignments';
-      url = 'https://angular-back-1-ljov.onrender.com/api/assignments';
+    url = 'https://angular-back-1-ljov.onrender.com/api/assignments';
 
   getAssignments(page: number, limit: number): Observable<any> {
     return this.http.get<any>(`${this.url}?page=${page}&limit=${limit}`);
