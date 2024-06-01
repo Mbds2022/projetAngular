@@ -51,7 +51,7 @@ Ce projet est une application de gestion des assignments développée avec Angul
     ng serve
     ```
 
-    L'application sera accessible à l'adresse `http://localhost:4200`.
+    L'application sera accessible à l'adresse local: `http://localhost:4200` | hebergé: `https://angular-front-ddfj.onrender.com`.
 
 ## Utilisation
 
@@ -63,7 +63,8 @@ Ce projet est une application de gestion des assignments développée avec Angul
 
 ### Administration
 
-- Seul l'utilisateur ayant le rôle `admin` peut modifier ou supprimer les assignments. Assurez-vous de configurer les utilisateurs avec les rôles appropriés dans le service d'authentification codé en dur.
+- Seul l'utilisateur ayant le rôle `admin` peut modifier ou supprimer les assignments. Il faut s'assurer de configurer les utilisateurs avec les rôles appropriés dans le service d'authentification codé en dur.
+
 
 ## Améliorations futures
 
@@ -79,3 +80,6 @@ Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus d'i
 ## Remerciements
 
 Merci à tous les contributeurs qui ont aidé à développer ce projet !
+M. Buffa,
+Nos camarades de classe,
+...
