@@ -4,7 +4,7 @@
   "newProjectRoot": "projects",
   "projects": {
     "angular-app-mbdsci": {
-      "root": "2e2",
+      "root": "",
       "sourceRoot": "src",
       "projectType": "application",
       "architect": {
