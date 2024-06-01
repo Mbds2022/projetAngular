@@ -14,7 +14,6 @@ Ce projet est une application de gestion des assignments développée avec Angul
   - Note sur 20
   - Remarques
 - **Affichage amélioré des Assignments** : Utilisation de Material Cards, affichage des détails de chaque assignment, etc.
-- **Formulaire Stepper** : Formulaire en plusieurs étapes pour l'ajout et la modification des assignments.
 - **Administration** : Seul l'administrateur peut modifier ou supprimer les assignments.
 - **Hébergement** : Application hébergée sur [render.com](https://render.com).
 
@@ -60,7 +59,7 @@ Ce projet est une application de gestion des assignments développée avec Angul
 
 - L'application utilise une liste de login/passwords codée en dur pour l'authentification. Vous pouvez modifier le service d'authentification pour ajouter ou supprimer des utilisateurs.
 - Pour une meilleure gestion des utilisateurs, vous pouvez étendre cette fonctionnalité pour utiliser une collection `users` dans MongoDB et valider les utilisateurs via cette collection.
-- Pour une sécurité accrue, vous pouvez implémenter l'authentification avec JSON Web Tokens (JWT) à l'avenir.
+- Pour une sécurité accrue, nous pouvons implémenter l'authentification avec JSON Web Tokens (JWT) à l'avenir.
 
 ### Administration
 
@@ -72,15 +71,6 @@ Ce projet est une application de gestion des assignments développée avec Angul
 - Ajout de tests unitaires et de tests d'intégration pour assurer la qualité du code.
 - Optimisation des performances et amélioration de l'expérience utilisateur.
 
-## Contribution
-
-Les contributions sont les bienvenues ! Pour contribuer :
-
-1. Forkez le projet.
-2. Créez une branche pour votre fonctionnalité (`git checkout -b feature/AmazingFeature`).
-3. Commitez vos modifications (`git commit -m 'Add some AmazingFeature'`).
-4. Poussez vers la branche (`git push origin feature/AmazingFeature`).
-5. Ouvrez une Pull Request.
 
 ## Licence
 
