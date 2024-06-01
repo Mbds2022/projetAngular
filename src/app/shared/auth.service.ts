@@ -10,8 +10,8 @@ export class AuthService {
     {username: '', password: '', isAdmin: false}
   ];
   users: Array<{username: string, password: string, isAdmin: boolean}> = [
-    {username: 'nomel', password: '1234', isAdmin: true},
-    {username: 'oumou', password: '1234', isAdmin: false},
+    {username: 'ange', password: '1234', isAdmin: true},
+    {username: 'israel', password: '1234', isAdmin: false},
   ];
 
   constructor(
