@@ -3,6 +3,8 @@ import { Location, LocationStrategy, PathLocationStrategy, PopStateEvent } from 
 import { Router, NavigationEnd, NavigationStart } from '@angular/router';
 import PerfectScrollbar from 'perfect-scrollbar';
 import * as $ from "jquery";
+
+
 import { filter, Subscription } from 'rxjs';
 
 @Component({
@@ -10,6 +12,8 @@ import { filter, Subscription } from 'rxjs';
   templateUrl: './admin-layout.component.html',
   styleUrls: ['./admin-layout.component.scss']
 })
+
+
 export class AdminLayoutComponent implements OnInit {
   private _router: Subscription;
   private lastPoppedUrl: string;
